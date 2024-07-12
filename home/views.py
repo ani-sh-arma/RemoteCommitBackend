@@ -12,6 +12,11 @@ class GitHubRepoUploadView(APIView):
         base_url = 'https://api.github.com'
         username = settings.GITHUB_USERNAME
         token = settings.GITHUB_TOKEN
+
+        print(username)
+        print(token)
+        print(settings.GITHUB_USERNAMEn)
+        print(settings.GITHUB_TOKENn)
         
         repo_name = request.data.get('repo_name')
         repo_description = request.data.get('repo_description')
