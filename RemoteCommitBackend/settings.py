@@ -129,7 +129,10 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-GITHUB_USERNAME = os.getenv('GITHUB_USERNAME')
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+# GITHUB_USERNAME = os.getenv('GITHUB_USERNAME')
+# GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+
+GITHUB_USERNAME = os.environ.get('GITHUB_USERNAME')
+GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 
 CORS_ALLOW_ALL_ORIGINS = True
